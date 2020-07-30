@@ -4,7 +4,11 @@ prepare: app sign zip upload
 
 app: clean
 	@echo "Compiling Singt into a Mac App..."
-	pyinstaller --noconsole --additional-hooks-dir=hooks --icon=singt.icns singt.py
+	pyinstaller --noconsole \
+               --additional-hooks-dir=hooks \
+               --icon=singt.icns \
+               --name="Singt" \
+               singt.py
 
 sign:
 	@echo "Code signing the app..." 
