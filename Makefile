@@ -17,6 +17,7 @@ sign:
             --deep \
             --options runtime \
             --sign "${DEVELOPER_ID_CERT_NAME}" \
+            --entitlements entitlements.plist \
             dist/singt.app
 
 zip:
