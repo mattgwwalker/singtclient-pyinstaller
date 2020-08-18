@@ -8,6 +8,7 @@ app: clean
                --additional-hooks-dir=hooks \
                --icon=singt.icns \
                --name="Singt" \
+               --hidden-import=sqlite3 \
                singt.py
 
 sign:

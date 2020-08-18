@@ -1,3 +1,5 @@
+from singtclient import context
 from singtclient import client
 
-client.start()
+context = context.make_context()
+client.start(context)
