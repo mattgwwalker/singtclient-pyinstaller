@@ -1,2 +1,6 @@
 credentials.sh
 *~
+.DS_Store
+build/
+dist/
+singt.spec
